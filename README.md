@@ -8,14 +8,14 @@ O **SGMP** é um sistema web completo para gestão de agendamentos em salões de
 
 ## ✨ Funcionalidades
 
-- 📅 **Agendamentos** — criação, confirmação e gerenciamento de horários
+- 📅 **Agendamentos** — criação, confirmação e gerenciamento de horários, com notificações via WhatsApp
 - 💼 **Serviços** — cadastro com nome, descrição, valor e duração
 - 👥 **Clientes** — cadastro via telefone (com identificação automática)
 - 💇 **Profissionais** — vinculados a usuários, com controle de disponibilidade
 - 🚫 **Bloqueios de agenda** — impede agendamentos em datas/horários específicos
 - 🕒 **Horários de atendimento** — configuração por dia da semana e feriados
 - 🖼️ **Portfólio** — exibição de trabalhos com imagem e descrição
-- 🏢 **Empresa** — dados institucionais (razão social, CNPJ, logo, redes sociais)
+- 🏢 **Empresa** — dados institucionais (razão social, CNPJ, logo, redes sociais...)
 - 🔐 **Autenticação** — níveis de acesso (Administrador / Funcionário)
 - 📊 **Histórico de logins** — rastreio de IP e dispositivo
 
@@ -56,7 +56,7 @@ O **SGMP** é um sistema web completo para gestão de agendamentos em salões de
 | `horarios_atendimento` | Horário de funcionamento por dia da semana |
 | `portfolio` | Trabalhos exibidos no site |
 | `empresa` | Dados institucionais do salão |
-| `historico_logins` | Registro de acessos (IP + dispositivo) |
+| `historico_logins` | Registro de acessos (IP + dispositivo + Data/hora) |
 
 ### 🔧 Instalação do Banco
 
