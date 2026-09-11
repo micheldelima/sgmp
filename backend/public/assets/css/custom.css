@@ -1,0 +1,73 @@
+.content {
+        min-height: calc(100vh - 120px);
+    }
+    footer {
+        height: 60px;
+        background-color: #ff69b4 !important; /* Mesma cor do menu */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-dropdown {
+        margin-left: auto;
+    }
+    
+    /* Menu principal */
+    .navbar-custom {
+        background-color: #ff69b4 !important;
+    }
+    
+    /* Itens do menu */
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .dropdown-item {
+        color: white !important;
+        transition: background-color 0.2s ease; /* Transição suave */
+    }
+    
+    /* Efeito hover simples */
+    .navbar-custom .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Leve brilho */
+    }
+    
+    /* Dropdown */
+    .navbar-custom .dropdown-menu {
+        background-color: #ff69b4;
+        border: none;
+    }
+    
+    .navbar-custom .dropdown-item:hover {
+        background-color: #ff1493;
+    }
+    
+    /* Toggler mobile */
+    .navbar-custom .navbar-toggler {
+        border-color: rgba(255,255,255,0.5);
+    }
+    
+    .navbar-custom .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+/*  Ajuste nas tabelas */
+.table td, .table th {
+    vertical-align: middle !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+/*  Força quebra de texto */
+.text-wrap {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    max-width: 400px !important;
+}
+
+.table th, .table td {
+    white-space: nowrap;       /* não quebra o texto */
+    overflow: hidden;          /* esconde conteúdo extra */
+    text-overflow: ellipsis;   /* adiciona "..." quando ultrapassar o limite */
+    max-width: 180px;          /* limite máximo */
+}

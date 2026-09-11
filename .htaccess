@@ -1,0 +1,28 @@
+# Bloqueia listagem de diretórios
+Options -Indexes
+
+# Remove a assinatura do Apache
+Header unset Server
+Header always unset X-Powered-By
+
+# Proteção contra cliquejacking
+Header always set X-Frame-Options "DENY"
+
+# Segurança contra MIME-Sniffing
+Header set X-Content-Type-Options "nosniff"
+
+# Proteção contra ataques XSS
+Header always set X-XSS-Protection "1; mode=block"
+
+# Proteção contra rastreamento de referer
+Header always set Referrer-Policy "no-referrer"
+
+# Política de Segurança de Conteúdo (CSP) - restringe execução de scripts externos
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' data:; img-src 'self' data:;"
+
+# Oculta a versão do Apache e outras informações do servidor.
+ServerSignature Off
+
+DirectoryIndex index.php
+
+

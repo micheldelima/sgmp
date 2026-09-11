@@ -1,0 +1,25 @@
+# Impedir listagem de diretórios
+Options -Indexes
+
+# Ativar reescrita de URLs (necessário para bloqueios abaixo)
+RewriteEngine On
+
+# Definir a base (ajuste se seu site estiver em um subdiretório)
+RewriteBase /app-uepg/backend/public/
+
+# Permitir acesso direto apenas a arquivos PHP dentro de public/
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Bloquear acesso direto a pastas internas do backend
+RewriteRule ^(config|includes|routes|backups) - [F,L,NC]
+
+# Bloquear arquivos sensíveis
+<FilesMatch "\.(env|sql|ini|log|bak|json|sh)$">
+    Deny from all
+</FilesMatch>
+
+# Permitir acesso a arquivos estáticos
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|eot|mp4|pdf)$">
+    Require all granted
+</FilesMatch>
