@@ -20,7 +20,7 @@
   "description": "Frontend do sistema de agendamento para estúdio de manicure e pedicure",
   "dependencies": {
     "aos": "^2.3.4",
-    "axios": "^1.7.9",
+    "axios": "^1.20.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "frontend": "file:",
